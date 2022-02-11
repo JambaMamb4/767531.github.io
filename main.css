@@ -1,0 +1,181 @@
+body {
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(fone.jpg);
+	color: #fff;
+	font-family: sans-serif;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 150px;
+	font-size: 50px;
+}
+
+p {
+	font-size: 25px;
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 150px;
+	font-size: 50px;
+}
+.topnav {
+
+    background-color: black;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: green;
+    color: black;
+}
+.topnav a.active {
+    background-color: green;
+    color: white;
+}
+{
+   background-image:url(fone.jpg); /* Цвет фона и путь к файлу */
+   color: #fff; /* Цвет текста */
+  }
+  margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(http://habrastorage.org/files/996/d76/d04/996d76d0410d422fa54cc433ce7ead2a.png);
+}
+.wrapper {
+	height: 350px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 850px;
+}
+
+.slider {
+	background-color: #ddd;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.wrapper > input {
+	display: none;
+}
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+.slide1 { background-image: url(power.png); }
+.slide2 { background-image: url(1_.jpg); }
+.slide3 { background-image: url(agila.png); }
+.slide4 { background-image: url(2.jpg); }
+.slide5 { background-image: url(int.png); }
+wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #ddd;
+}
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
